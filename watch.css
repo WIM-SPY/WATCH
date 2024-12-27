@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 5px;
+  margin: 0;
   font-size: 28px;
 }
 
@@ -31,25 +31,34 @@ select {
   border-radius: 10px;
 }
 
-.city {
+.towns {
   display: flex;
+  justify-content: space-between; /* Space between elements */
   margin: 10px 0;
-  justify-content: space-between;
-  padding: 30px 0;
+  padding: 20px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
-.city:last-child {
+.towns:last-child {
   border: none;
 }
 
+.city-name {
+  flex: 1; /* Left: City Name */
+  text-align: left;
+}
+
 .date {
+  flex: 2; /* Middle: Date */
+  text-align: center;
   opacity: 0.7;
 }
 
 .time {
+  flex: 1; /* Right: Time */
   font-size: 48px;
   font-weight: bold;
+  text-align: right;
 }
 
 .time small {

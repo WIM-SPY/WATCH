@@ -6,9 +6,7 @@ function updateTime() {
     let nelspruitTime = moment().tz("Africa/Johannesburg");
 
     nelspruitDateElement.innerHTML = nelspruitTime.format("MMMM Do YYYY");
-    nelspruitTimeElement.innerHTML = nelspruitTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    nelspruitTimeElement.innerHTML = nelspruitTime.format("h:mm:ss");
   }
 
   let witbankElement = document.querySelector("#witbank");
@@ -18,9 +16,7 @@ function updateTime() {
     let witbankTime = moment().tz("Africa/Johannesburg");
 
     witbankDateElement.innerHTML = witbankTime.format("MMMM Do YYYY");
-    witbankTimeElement.innerHTML = witbankTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    witbankTimeElement.innerHTML = witbankTime.format("h:mm:ss");
   }
 }
 
